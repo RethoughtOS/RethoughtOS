@@ -126,3 +126,21 @@ wvdial
 xfsprogs
 xl2tpd
 zsh
+
+# Additional packages from the second list
+bind-tools
+crda
+eog
+firefox
+gdm
+gnome-console
+gnome-control-center
+gnome-session
+gnome-settings-daemon
+gnome-shell
+gnome-text-editor
+mesa
+nautilus
+networkmanager
+reiserfsprogs
+xorg-drivers
