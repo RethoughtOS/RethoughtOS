@@ -1,0 +1,35 @@
+# Ignore the work directory (used for temporary ISO build files)
+work/
+
+# Ignore the output directory (where the final ISO is stored)
+out/
+
+# Ignore system-specific files
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore core dumps
+core
+
+# Ignore temporary files from editors or tools
+*.tmp
+*.bak
+*.old
+~$*
+
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore compiled binaries or object files
+*.o
+*.out
+*.class
+*.so
+*.dll
+*.exe
