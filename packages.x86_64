@@ -1,5 +1,4 @@
 alsa-utils
-amd-ucode
 arch-install-scripts
 archinstall
 b43-fwcutter
@@ -24,7 +23,6 @@ dnsmasq
 dosfstools
 e2fsprogs
 edk2-shell
-efibootmgr
 espeakup
 ethtool
 exfatprogs
@@ -39,7 +37,6 @@ grml-zsh-config
 grub
 hdparm
 hyperv
-intel-ucode
 irssi
 iw
 iwd
@@ -117,7 +114,6 @@ usb_modeswitch
 usbmuxd
 usbutils
 vim
-virtualbox-guest-utils-nox
 vpnc
 wireless-regdb
 wireless_tools
@@ -145,3 +141,31 @@ nautilus
 networkmanager
 reiserfsprogs
 xorg-drivers
+
+## Boot
+efibootmgr
+efitools
+
+# HARDWARE
+
+## CPU
+amd-ucode
+intel-ucode
+
+
+# VM SUPPORT
+
+## Qemu
+qemu-guest-agent
+
+## Spice
+spice-vdagent
+
+## Virtual-box
+virtualbox-guest-utils
+
+## VMware
+open-vm-tools
+xf86-input-vmmouse
+xf86-video-vmware
+xf86-video-qxl
