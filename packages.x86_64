@@ -136,6 +136,7 @@ gnome-settings-daemon
 gnome-shell
 gnome-text-editor
 gnome-menus
+gnome-backgrounds
 mesa
 nautilus
 networkmanager
