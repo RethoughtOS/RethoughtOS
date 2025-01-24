@@ -142,6 +142,7 @@ nautilus
 networkmanager
 reiserfsprogs
 xorg-drivers
+screenfetch
 
 ## Boot
 efibootmgr
