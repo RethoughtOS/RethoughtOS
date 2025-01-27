@@ -148,6 +148,8 @@ screenfetch
 plymouth
 efibootmgr
 efitools
+mokutil
+shim-signed
 
 # HARDWARE
 

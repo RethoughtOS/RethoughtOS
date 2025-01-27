@@ -33,3 +33,8 @@ __pycache__/
 *.so
 *.dll
 *.exe
+
+*.crt
+*.key
+*.cer
+*.iso
