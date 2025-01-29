@@ -1,3 +1,4 @@
 [org/gnome/shell/extensions/dash-to-panel]
 show-activities-button=false
-
+show-apps-icon-file=''
+show-apps-icon-side-padding=0
