@@ -8,14 +8,31 @@ iso_application="RethoughtOS Live/Rescue DVD"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="arch"
 buildmodes=('iso')
-bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito'
-           'uefi-ia32.grub.esp' 'uefi-x64.grub.esp'
-           'uefi-ia32.grub.eltorito' 'uefi-x64.grub.eltorito')
+
+bootmodes=(
+  'bios.syslinux.mbr' 'bios.syslinux.eltorito'
+  'uefi-ia32.grub.esp' 'uefi-x64.grub.esp'
+  'uefi-ia32.grub.eltorito' 'uefi-x64.grub.eltorito'
+)
+
 arch="x86_64"
 pacman_conf="pacman.conf"
 airootfs_image_type="squashfs"
-airootfs_image_tool_options=('-comp' 'xz' '-Xbcj' 'x86' '-b' '1M' '-Xdict-size' '1M')
-bootstrap_tarball_compression=('zstd' '-c' '-T0' '--auto-threads=logical' '--long' '-19')
+
+# **Korrigierte SquashFS-Einstellungen für Performance & Stabilität**
+airootfs_image_tool_options=(
+  '-comp' 'zstd'                 # Schnellere Kompression als xz
+  '-Xcompression-level' '15'      # Hohe Kompressionsrate ohne zu viel Performanceverlust
+  '-b' '1M'                       # 1 MB Blockgröße für schnelleres Laden
+  '-processors' "$(nproc)"        # Nutzt alle CPU-Kerne für maximale Geschwindigkeit
+)
+
+# **Schnellere Bootstrap-Kompression mit Zstd**
+bootstrap_tarball_compression=(
+  'zstd' '-c' '-T0' '--auto-threads=logical' '--long' '-19'
+)
+
+# **Sichere Datei-Berechtigungen für Enterprise-Umgebungen**
 file_permissions=(
   ["/etc/shadow"]="0:0:400"
   ["/root"]="0:0:750"
