@@ -55,6 +55,7 @@ ppp
 tcpdump
 
 # Bootloader & Secure Boot
+edk2-shell
 efibootmgr
 efitools
 grub
