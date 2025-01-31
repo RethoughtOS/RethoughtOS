@@ -1,0 +1,17 @@
+[General]
+ColorScheme=BreezeDark
+Name=BreezeDark
+XftHintStyle=hintmedium
+XftAntialias=true
+XftSubPixel=rgb
+
+[KDE]
+LookAndFeelPackage=org.kde.breezedark.desktop
+Theme=BreezeDark
+
+[Colors:Window]
+BackgroundNormal=35,35,40
+ForegroundNormal=240,240,245
+
+[Colors:Selection]
+BackgroundNormal=138,43,226

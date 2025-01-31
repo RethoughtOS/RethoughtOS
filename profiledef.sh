@@ -34,6 +34,7 @@ bootstrap_tarball_compression=(
 
 # **Sichere Datei-Berechtigungen für Enterprise-Umgebungen**
 file_permissions=(
+  ["/etc/gshadow"]="0:0:0400"
   ["/etc/shadow"]="0:0:400"
   ["/root"]="0:0:750"
   ["/root/.automated_script.sh"]="0:0:755"

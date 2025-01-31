@@ -1,0 +1,6 @@
+[Theme]
+name=BreezeDark
+
+[Fonts]
+fixed=Hack,10,-1,5,50,0,0,0,0,0
+general=Noto Sans,10,-1,5,50,0,0,0,0,0

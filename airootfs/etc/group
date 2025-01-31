@@ -1,0 +1,5 @@
+root:x:0:root
+adm:x:4:rethoughtos
+wheel:x:10:rethoughtos
+uucp:x:14:rethoughtos
+rethoughtos:x:1000:
