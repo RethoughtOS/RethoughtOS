@@ -6,7 +6,7 @@
 ### Install build dependencies
 
 ```
-sudo pacman -S archiso git squashfs-tools sbsigntools --needed
+sudo pacman -S archiso git squashfs-tools sbsigntools grub --needed
 ```
 It is recommended to reboot after these changes.
 
