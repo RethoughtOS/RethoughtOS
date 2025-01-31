@@ -55,7 +55,7 @@ openssh
 openvpn
 ppp
 tcpdump
-bolt  # Für Thunderbolt-Unterstützung
+bolt
 
 # Bootloader & Secure Boot
 edk2-shell
@@ -88,7 +88,7 @@ tmux
 tpm2-tools
 usbutils
 vim
-fwupd  # Für Firmware-Updates
+fwupd
 
 # Audio & Multimedia
 alsa-utils
@@ -103,7 +103,7 @@ sof-firmware
 bluez
 bluez-utils
 bluedevil
-blueman  # Für erweiterte Bluetooth-Verwaltung
+blueman
 
 # Terminal-Emulatoren & Shells
 foot-terminfo
@@ -208,12 +208,12 @@ xf86-video-nouveau
 xf86-video-vesa
 
 # Laptop-spezifische Verbesserungen für Framework
-fprintd  # Fingerabdruck-Scanner
+fprintd
 libfprint
-brightnessctl  # Helligkeitssteuerung
-tlp  # Energiemanagement
-powertop  # Energiemanagement
-thermald  # Temperaturmanagement
+brightnessctl
+tlp
+powertop
+thermald
 
 # VM-Unterstützung (entfernen, falls nicht benötigt)
 qemu-guest-agent
@@ -223,8 +223,6 @@ open-vm-tools
 
 # KDE & Laptop Power-Management
 powerdevil
-plasma-powerdevil
-plasma-power-management
 
 # RethoughtOS-spezifische Anpassungen
 rethoughtos-branding
