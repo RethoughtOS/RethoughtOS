@@ -1,2 +1,6 @@
+[Libinput]
+ClickMethod=2
+NaturalScroll=true
+
 [Mouse]
 cursorTheme=Breeze
