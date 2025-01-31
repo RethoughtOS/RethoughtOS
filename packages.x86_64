@@ -7,6 +7,8 @@ mkinitcpio-archiso
 mkinitcpio-nfs-utils
 systemd-resolvconf
 sudo
+intel-ucode
+amd-ucode
 
 # Dateisysteme & Speicherverwaltung
 btrfs-progs
@@ -53,6 +55,7 @@ openssh
 openvpn
 ppp
 tcpdump
+bolt  # Für Thunderbolt-Unterstützung
 
 # Bootloader & Secure Boot
 edk2-shell
@@ -85,10 +88,12 @@ tmux
 tpm2-tools
 usbutils
 vim
+fwupd  # Für Firmware-Updates
 
 # Audio & Multimedia
 alsa-utils
 pavucontrol-qt
+pipewire
 pipewire-alsa
 pipewire-jack
 pipewire-pulse
@@ -98,6 +103,7 @@ sof-firmware
 bluez
 bluez-utils
 bluedevil
+blueman  # Für erweiterte Bluetooth-Verwaltung
 
 # Terminal-Emulatoren & Shells
 foot-terminfo
@@ -201,11 +207,24 @@ xf86-video-ati
 xf86-video-nouveau
 xf86-video-vesa
 
+# Laptop-spezifische Verbesserungen für Framework
+fprintd  # Fingerabdruck-Scanner
+libfprint
+brightnessctl  # Helligkeitssteuerung
+tlp  # Energiemanagement
+powertop  # Energiemanagement
+thermald  # Temperaturmanagement
+
 # VM-Unterstützung (entfernen, falls nicht benötigt)
 qemu-guest-agent
 spice-vdagent
 virtualbox-guest-utils
 open-vm-tools
+
+# KDE & Laptop Power-Management
+powerdevil
+plasma-powerdevil
+plasma-power-management
 
 # RethoughtOS-spezifische Anpassungen
 rethoughtos-branding
